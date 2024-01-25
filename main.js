@@ -1,4 +1,5 @@
 const locationPath = location.pathname;
+const repo = "/Vue-lesson4-components/";
 
 const path = {
   local: {
@@ -6,11 +7,12 @@ const path = {
     product: "/product.html",
   },
   server: {
-    home: ["/Vue-lesson3-vue-start/", "/Vue-lesson3-vue-start/index.html"],
-    product: "/Vue-lesson3-vue-start/product.html",
+    home: [repo, `${repo}index.html`],
+    product: `${repo}product.html`,
   },
 };
 
+console.log(path);
 if (
   locationPath === path.local.home[0] ||
   locationPath === path.local.home[1] ||
